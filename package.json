@@ -4,7 +4,7 @@
   "publisher": "YukiAdachi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yuki777/vscode-twig-goto"
+    "url": "https://github.com/pj8/vscode-twig-goto"
   },
   "description": "Jump to twig parts.",
   "version": "0.1.0",
