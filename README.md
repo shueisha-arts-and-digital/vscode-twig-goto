@@ -1,6 +1,5 @@
 # vscode-twig-goto
-- TODO: Link to vscode-twig-goto on Visual Studio Marketplace
-- TODO: Demo here
+[vscode-twig-goto - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=YukiAdachi.vscode-twig-goto)
 
 ## Features
 - Go to twig parts.
