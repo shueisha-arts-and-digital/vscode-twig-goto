@@ -1,0 +1,23 @@
+name-template: "v$NEXT_MINOR_VERSION 🌈"
+tag-template: "v$NEXT_MINOR_VERSION"
+categories:
+  - title: "Breaking change"
+    labels:
+      - "breaking Change"
+  - title: "🚀 Features"
+    labels:
+      - "enhancement"
+  - title: "🐛 Bug Fixes"
+    labels:
+      - "bug"
+  - title: "Dependencies"
+    labels:
+      - "dependencies"
+      - "renovate"
+  - title: "Refactor"
+    labels:
+      - "refactoring"
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
+template: |
+  ## Changes
+  $CHANGES

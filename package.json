@@ -1,0 +1,75 @@
+{
+  "name": "vscode-twig-goto",
+  "displayName": "vscode-twig-goto",
+  "publisher": "YukiAdachi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuki777/vscode-twig-goto"
+  },
+  "description": "Jump to twig parts.",
+  "version": "0.1.0",
+  "engines": {
+    "node": "14.*",
+    "npm": "6.*",
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:twig"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "title": "vscode-twig-goto extension configuration",
+      "properties": {
+        "vscode-twig-goto.supportedLanguages": {
+          "type": "array",
+          "default": [
+            "twig"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "description": "A list of vscode language names where the extension should be used."
+        },
+        "vscode-twig-goto.resourcePagePaths": {
+          "type": "array",
+          "default": [
+            "var/templates"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "description": "Page resource path list to be searched."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "lint:fix": "eslint --fix src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.17.27",
+    "@types/parse-path": "^4.0.1",
+    "@types/vscode": "^1.61.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.27.0",
+    "glob": "^7.2.0",
+    "mocha": "^9.1.3",
+    "typescript": "^4.4.4",
+    "vsce": "^1.100.1",
+    "vscode-test": "^1.5.2"
+  }
+}
