@@ -26,7 +26,7 @@ export default class PeekFileDefinitionProvider implements vscode.DefinitionProv
   }
 
   searchFilePath(fileName: String): Thenable<vscode.Uri[]> {
-    return vscode.workspace.findFiles(`**/${fileName}`); // Returns promise
+    return vscode.workspace.findFiles(`${fileName}`); // Returns promise
   }
 
   async provideDefinition(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken): Promise<any[] | vscode.Location | vscode.Location[] | undefined> {
