@@ -7,7 +7,7 @@
     "url": "https://github.com/pj8/vscode-twig-goto"
   },
   "description": "Jump to twig parts.",
-  "version": "0.1.0",
+  "version": "0.4.1",
   "engines": {
     "node": "14.*",
     "npm": "6.*",
