@@ -25,7 +25,7 @@ jobs:
         run: |
           npm --no-git-tag-version version $RELEASE_VERSION
       - name: Publish to Visual Studio Marketplace
-        uses: HaaLeo/publish-vscode-extension@ddfa605606270abb79040fc684324cae53a3b1b0 # v1
+        uses: HaaLeo/publish-vscode-extension@f4ece70f329f66686bd71c54b1671353fe320e49 # v1
         with:
           pat: ${{ secrets.VSCE_PAT }}
           registryUrl: https://marketplace.visualstudio.com
