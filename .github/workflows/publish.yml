@@ -10,8 +10,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
+      - uses: actions/setup-node@b6651e20e530d6e6b845a9828606779e89f5529c # v1
         with:
           node-version: 14
       - run: npm ci
@@ -25,7 +25,7 @@ jobs:
         run: |
           npm --no-git-tag-version version $RELEASE_VERSION
       - name: Publish to Visual Studio Marketplace
-        uses: HaaLeo/publish-vscode-extension@v1
+        uses: HaaLeo/publish-vscode-extension@ddfa605606270abb79040fc684324cae53a3b1b0 # v1
         with:
           pat: ${{ secrets.VSCE_PAT }}
           registryUrl: https://marketplace.visualstudio.com
