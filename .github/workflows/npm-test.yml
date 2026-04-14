@@ -13,7 +13,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
     - name: Install Node.js
-      uses: actions/setup-node@b6651e20e530d6e6b845a9828606779e89f5529c # v1
+      uses: actions/setup-node@f1f314fca9dfce2769ece7d933488f076716723e # v1
       with:
         node-version: 14.x
     - run: npm install
